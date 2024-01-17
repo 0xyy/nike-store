@@ -8,13 +8,22 @@ export type ButtonProps = ComponentPropsWithoutRef<"button"> & {
 	backgroundColor?: string;
 	borderColor?: string;
 	textColor?: string;
+	fullWidth?: boolean;
 };
 
-const Button = ({ label, iconUrl, backgroundColor, borderColor, textColor }: ButtonProps) => {
+const Button = ({
+	label,
+	iconUrl,
+	backgroundColor,
+	borderColor,
+	textColor,
+	fullWidth,
+}: ButtonProps) => {
 	return (
 		<button
 			className={clsx(
-				"flex items-center justify-center gap-2 rounded-full border  px-7 py-4 font-montserrat text-lg leading-none ",
+				"font-montserrat flex items-center justify-center gap-2 rounded-full border px-7 py-4 text-lg leading-none",
+				fullWidth && "w-full",
 				backgroundColor
 					? `${backgroundColor} ${textColor} ${borderColor}`
 					: "border-coral-red bg-coral-red text-white",
