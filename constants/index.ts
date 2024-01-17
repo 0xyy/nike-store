@@ -13,6 +13,7 @@ import {
 	thumbnailShoe2,
 	thumbnailShoe3,
 } from "@/assets/images";
+import { v4 as uuidv4 } from "uuid";
 
 export const navLinks = [
 	{ href: "#home", label: "Home" },
@@ -38,29 +39,33 @@ export const shoes = [
 
 export const statistics = [
 	{ value: "1k+", label: "Brands" },
-	{ value: "500+", label: "Shops" },
-	{ value: "250k+", label: "Customers" },
+	{ value: "300+", label: "Shops" },
+	{ value: "850k+", label: "Customers" },
 ];
 
 export const products = [
 	{
+		id: uuidv4(),
 		imgUrl: shoe4,
-		name: "Nike Air Jordan-01",
+		name: "Nike Air Jordan",
 		price: "$200.20",
 	},
 	{
+		id: uuidv4(),
 		imgUrl: shoe5,
-		name: "Nike Air Jordan-10",
+		name: "Nike Dunk Low",
 		price: "$210.20",
 	},
 	{
+		id: uuidv4(),
 		imgUrl: shoe6,
-		name: "Nike Air Jordan-100",
+		name: "Nike Air Max",
 		price: "$220.20",
 	},
 	{
+		id: uuidv4(),
 		imgUrl: shoe7,
-		name: "Nike Air Jordan-001",
+		name: "Nike Air Force",
 		price: "$230.20",
 	},
 ];
