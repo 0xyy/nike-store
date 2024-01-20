@@ -1,5 +1,5 @@
 import { shoe8 } from "@/assets/images";
-import Button from "@/components/Button";
+import Button from "@/components/base/Button";
 import Image from "next/image";
 
 const SuperQuality = () => {
@@ -10,8 +10,8 @@ const SuperQuality = () => {
 		>
 			<div className="flex flex-1 flex-col">
 				<h2 className="font-palanquin text-4xl font-bold capitalize lg:max-w-lg">
-					We provide you <span className="text-coral-purple">Super</span>{" "}
-					<span className="text-coral-purple">Quality</span> Shoes
+					We provide you <span className="text-coral-green">Super</span>{" "}
+					<span className="text-coral-green">Quality</span> Shoes
 					<br />
 				</h2>
 				<p className="info-text font-montserrat mt-4 lg:max-w-lg">

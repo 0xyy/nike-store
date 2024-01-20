@@ -9,6 +9,7 @@ export type ButtonProps = ComponentPropsWithoutRef<"button"> & {
 	borderColor?: string;
 	textColor?: string;
 	fullWidth?: boolean;
+	className?: string;
 };
 
 const Button = ({
@@ -18,15 +19,17 @@ const Button = ({
 	borderColor,
 	textColor,
 	fullWidth,
+	className,
 }: ButtonProps) => {
 	return (
 		<button
 			className={clsx(
-				"font-montserrat flex items-center justify-center gap-2 rounded-full border px-7 py-4 text-lg leading-none",
+				"font-montserrat flex items-center justify-center gap-2 rounded-full border px-7 py-4 text-lg leading-none transition-colors",
 				fullWidth && "w-full",
 				backgroundColor
 					? `${backgroundColor} ${textColor} ${borderColor}`
-					: "border-coral-purple bg-coral-purple text-white",
+					: "border-coral-green bg-coral-green text-white hover:bg-green-800",
+				className,
 			)}
 		>
 			{label}

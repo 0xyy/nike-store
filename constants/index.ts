@@ -43,30 +43,46 @@ export const statistics = [
 	{ value: "850k+", label: "Customers" },
 ];
 
+export type Product = {
+	id: string;
+	imgUrl: any;
+	name: string;
+	description: string;
+	price: number;
+};
+
 export const products = [
 	{
-		id: uuidv4(),
+		id: "4d4b8b0a-1034-4527-a3c4-eb19c596fb77",
 		imgUrl: shoe4,
 		name: "Nike Air Jordan",
-		price: "$200.20",
+		description:
+			"The Nike Air Jordan, an iconic collaboration with basketball legend Michael Jordan, combines style and performance. With its sleek design, innovative technology, and a legacy rooted in the basketball courts, the Air Jordan series is a symbol of athleticism and streetwear fashion.",
+		price: 200,
 	},
 	{
-		id: uuidv4(),
+		id: "66af10e0-a15c-496a-88e3-4edd8286351b",
 		imgUrl: shoe5,
 		name: "Nike Dunk Low",
-		price: "$210.20",
+		description:
+			"The Nike Dunk Low is a timeless classic, celebrated for its versatility and clean design. Originally designed for basketball, it has evolved into a cultural icon with its low-profile silhouette and vibrant colorways. Whether on the streets or the skate park, the Dunk Low offers comfort and style for any occasion.",
+		price: 210.1,
 	},
 	{
-		id: uuidv4(),
+		id: "749cad98-1002-41ff-94e4-1798a3f49dba",
 		imgUrl: shoe6,
 		name: "Nike Air Max",
-		price: "$220.20",
+		description:
+			"The Nike Air Max series revolutionized sneaker design with its visible Air cushioning technology. Known for its exceptional comfort and distinctive aesthetic, Air Max shoes are a perfect blend of performance and style. From the track to the streets, the Air Max continues to be a symbol of innovation and fashion.",
+		price: 220.2,
 	},
 	{
-		id: uuidv4(),
+		id: "1d2fbd3f-5be2-438e-ad14-d90719993b84",
 		imgUrl: shoe7,
 		name: "Nike Air Force",
-		price: "$230.20",
+		description:
+			"The Nike Air Force, a streetwear staple since its debut, boasts a sleek and timeless design. With its premium materials and iconic silhouette, the Air Force is a symbol of urban style and cultural significance. Whether in classic white or bold colors, these shoes are a must-have for sneaker enthusiasts.",
+		price: 230.3,
 	},
 ];
 

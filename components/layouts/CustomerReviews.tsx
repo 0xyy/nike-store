@@ -1,4 +1,4 @@
-import ReviewCard from "@/components/ReviewCard";
+import ReviewCard from "@/components/common/ReviewCard";
 import { reviews } from "@/constants";
 
 const CustomerReviews = () => {
@@ -7,7 +7,7 @@ const CustomerReviews = () => {
 			<div className="flex flex-col items-center">
 				<h3 className="font-palanquin text-4xl font-bold capitalize">
 					What Our
-					<span className="text-coral-purple"> Customers </span>
+					<span className="text-coral-green"> Customers </span>
 					Say
 				</h3>
 				<p className="info-text margin-auto mt-4 max-w-lg text-center">

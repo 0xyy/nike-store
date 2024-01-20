@@ -20,7 +20,7 @@ const ShoeCard = ({
 		<div
 			className={clsx(
 				"cursor-pointer rounded-xl border-2 max-sm:flex-1",
-				bigShoeImg === imgUrl.bigShoe ? "border-coral-red" : "border-transparent",
+				bigShoeImg === imgUrl.bigShoe ? "border-coral-green" : "border-transparent",
 			)}
 			onClick={handleClick}
 		>

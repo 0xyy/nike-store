@@ -1,4 +1,3 @@
-import Nav from "@/components/Nav";
 import {
 	Hero,
 	PopularProducts,
@@ -8,7 +7,8 @@ import {
 	CustomerReviews,
 	Subscribe,
 	Footer,
-} from "@/sections";
+	Nav,
+} from "@/components/layouts";
 
 export default function Home() {
 	return (

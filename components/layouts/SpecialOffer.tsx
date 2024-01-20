@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Button from "@/components/Button";
+import Button from "@/components/base/Button";
 
 import { arrowRight } from "@/assets/icons";
 import { offer } from "@/assets/images";
@@ -13,7 +13,7 @@ const SpecialOffer = () => {
 			</div>
 			<div className="flex flex-1 flex-col">
 				<h2 className="font-palanquin text-4xl font-bold capitalize lg:max-w-lg">
-					<span className="text-coral-purple">Special</span> Offer
+					<span className="text-coral-green">Special</span> Offer
 				</h2>
 				<p className="info-text font-montserrat mt-4 lg:max-w-lg">
 					Embark on a shopping journey that redefines your experience with unbeatable deals. From

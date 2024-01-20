@@ -5,18 +5,17 @@ import Image from "next/image";
 
 import { Menu, ShoppingCart, X } from "lucide-react";
 
-import { hamburger } from "@/assets/icons";
 import { navLinks } from "@/constants";
 
 import { headerLogo } from "@/assets/images";
 import { clsx } from "clsx";
 
 const Nav = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<header className="padding-x w-full  py-8">
-			<nav className="max-container flex items-center justify-between ">
+		<header className="padding-x fixed z-50 w-full bg-transparent py-8 backdrop-blur-lg backdrop-filter">
+			<nav className="max-container flex items-center justify-between">
 				<a href="/">
 					<Image src={headerLogo} alt="Logo" width={130} height={29} />
 				</a>

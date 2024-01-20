@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 
-import Button from "@/components/Button";
+import Button from "@/components/base/Button";
 
 import { arrowRight } from "@/assets/icons";
 import { shoes, statistics } from "@/constants";
 import { bigShoe1 } from "@/assets/images";
-import ShoeCard from "@/components/ShoeCard";
+import ShoeCard from "@/components/common/ShoeCard";
 import { useState } from "react";
 
 const Hero = () => {
@@ -18,13 +18,13 @@ const Hero = () => {
 			className="max-container flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row"
 		>
 			<div className="max-xl:padding-x relative flex w-full flex-col items-start justify-center pt-28 xl:w-2/5">
-				<p className="font-montserrat text-coral-purple text-xl">Our Winter Collection</p>
+				<p className="font-montserrat text-coral-green text-xl">Our Winter Collection</p>
 				<h1 className="font-palanquin mt-10 text-8xl font-bold max-sm:text-[72px] max-sm:leading-[82px]">
 					<span className="relative z-10 pr-10 xl:whitespace-nowrap xl:bg-white">
 						The New Arrival
 					</span>
 					<br />
-					<span className="text-coral-purple mt-3 inline-block">Nike</span> Shoes
+					<span className="text-coral-green mt-3 inline-block">Nike</span> Shoes
 				</h1>
 				<p className="font-montserrat mb-14 mt-6 text-lg leading-8 text-slate-gray sm:max-w-sm">
 					Discover stylish Nike arrivals, quality comfort, and innovation for your active life.

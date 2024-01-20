@@ -22,7 +22,7 @@ const config: Config = {
 		extend: {
 			colors: {
 				primary: "#ECEEFF",
-				"coral-purple": "#007f5f",
+				"coral-green": "#007f5f",
 				"slate-gray": "#6D6D6D",
 				"pale-blue": "#F5F6FF",
 				"white-400": "rgba(255, 255, 255, 0.80)",
