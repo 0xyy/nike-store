@@ -31,6 +31,7 @@ const cartSlice = createSlice({
 			if (!product) return;
 			if (product.count === 1) state.items.splice(state.items.indexOf(product), 1);
 			else product.count--;
+			state.total -= product.price;
 		},
 		clearCart(state) {
 			state = initialState;
