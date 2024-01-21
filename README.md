@@ -10,6 +10,7 @@ Note: Project is currently in progress 👷‍♂️
 
 ## Demo
 
+https://nike-store-tan.vercel.app/
 
 ## Tech Stack
 
