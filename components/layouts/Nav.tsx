@@ -9,9 +9,12 @@ import { navLinks } from "@/constants";
 
 import { headerLogo } from "@/assets/images";
 import { clsx } from "clsx";
+import { getCartCount } from "@/libs/redux/slices/cartSlice";
+import { useAppSelector } from "@/libs/hooks/redux";
 
 const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const cartCount = useAppSelector((state) => getCartCount(state));
 
 	return (
 		<header className="padding-x fixed z-50 w-full bg-transparent py-8 backdrop-blur-lg backdrop-filter">
@@ -38,7 +41,7 @@ const Nav = () => {
 							className="flex items-center justify-center gap-2 text-slate-gray transition-colors hover:text-gray-800"
 						>
 							<ShoppingCart size={20} />
-							<span className="text-xl">1</span>
+							<span className="text-xl">{cartCount}</span>
 						</Link>
 					</li>
 				</ul>
@@ -66,7 +69,7 @@ const Nav = () => {
 							className="flex items-center justify-center gap-2 text-slate-gray transition-colors hover:text-gray-800"
 						>
 							<ShoppingCart size={25} />
-							<span className="text-2xl">1</span>
+							<span className="text-2xl">{cartCount}</span>
 						</Link>
 					</li>
 				</ul>

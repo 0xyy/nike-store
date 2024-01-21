@@ -10,7 +10,7 @@ import {
 	Nav,
 } from "@/components/layouts";
 
-export default function Home() {
+export default function HomePage() {
 	return (
 		<main className="relative">
 			<Nav />

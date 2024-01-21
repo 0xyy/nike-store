@@ -20,6 +20,7 @@ const Button = ({
 	textColor,
 	fullWidth,
 	className,
+	...props
 }: ButtonProps) => {
 	return (
 		<button
@@ -31,6 +32,7 @@ const Button = ({
 					: "border-coral-green bg-coral-green text-white hover:bg-green-800",
 				className,
 			)}
+			{...props}
 		>
 			{label}
 			{iconUrl && (

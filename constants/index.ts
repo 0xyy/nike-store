@@ -157,3 +157,5 @@ export const socialMedia = [
 	{ src: twitter, alt: "twitter logo" },
 	{ src: instagram, alt: "instagram logo" },
 ];
+
+export const discountCodes = ["ODJ2", "1234", "PV01", "12MD"];

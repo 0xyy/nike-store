@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Palanquin } from "next/font/google";
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
+import { Toaster } from "react-hot-toast";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -20,7 +22,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={`${montserrat.className} ${palanquin.className}`}>{children}</body>
+			<body className={`${montserrat.className} ${palanquin.className}`}>
+				<StoreProvider>{children}</StoreProvider>
+				<Toaster />
+			</body>
 		</html>
 	);
 }
