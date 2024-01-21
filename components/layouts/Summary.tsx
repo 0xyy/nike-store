@@ -20,7 +20,7 @@ const Summary = () => {
 	return (
 		<div className="mt-2 h-fit w-full rounded-lg bg-pale-blue p-5 py-5 shadow-md lg:mt-0 lg:w-2/5">
 			<h3 className="font-palanquin text-3xl font-semibold">Summary</h3>
-			<p className="text-xl">Total: {formatPrice(total)}</p>
+			<p className="text-xl">Total: {formatPrice(Math.abs(total))}</p>
 			<form className="my-4 flex flex-col gap-2" onSubmit={submitHandler}>
 				<label htmlFor={id}>Discount code:</label>
 				<div className="flex h-[30px] items-center">
